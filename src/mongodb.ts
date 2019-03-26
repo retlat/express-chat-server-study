@@ -19,7 +19,7 @@ export const connect = async () => {
 
   for (let i = 0; i < acceptRetry; i++) {
     try {
-      if (i === 0) {
+      if (i !== 0) {
         await setTimeoutPromise(500);
       }
 
